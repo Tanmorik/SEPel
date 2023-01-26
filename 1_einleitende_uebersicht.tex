@@ -1,0 +1,22 @@
+% Mit \section{...} eröffnen wir einen neuen Abschnitt.
+% Der Befehl setzt nicht nur den Text in einer größeren,
+% fetten Schrift, sondern sorgt außerdem dafür, daß er im
+% Inhaltsverzeichnis erscheint.
+%
+% Mit \label{...} erzeugen wir einen Bezeichner, mit dessen Hilfe
+% wir später auf die Nummer des Abschnitts verweisen können (nämlich
+% mit \ref{...}).
+%
+% Das Kommentarzeichen hinter „Übersicht“ dient dazu, ein
+% Leerzeichen zwischen „Übersicht“ und dem \label-Befehl
+% zu vermeiden, das andernfalls sichtbar würde – z.B. im
+% Inhaltsverzeichnis.
+%
+\section{Einleitende Übersicht%
+         \label{sec:Einleitung}}
+
+Dieses Projekt befasst sich mit einem Modellfahrzeug das Automatisiert durch eine Strecke navigieren können soll. Dazu wird die Hardware größtenteils von der Firma Mdynamics zur Verfügung gestellt. 
+
+Deshalb befasst sich diese Arbeit vorrangig mit der Software, die auf dem Framework von ROS (Robot Operating System) aufbaut sowie die Verarbeitung und Nutzbarmachung eines Beschleunigungssensors, im folgenden imu (inertial measurement unit) genannt. 
+Ziel ist es, das Modellfahrzeug für den Wettbewerb des VDI - adc (autonomous driving challange) fit zu machen. Dazu soll es dem Fahrzeug möglich sein, diverse Disziplinen wie zum Beispiel das durchfahren einer Strecke, zu absolvieren. 
+Um dieses Ziel zu erreichen werden Basisfunktionalitäten und eine Lineare- und Angulare-Geschwindigkeitsregelung erstellt. Für die Geschwindigkeitsregelung sollen die Odometrie des Fahrzeugs sowie die imu zusammen arbeiten. In der Theorie wäre es so möglich, eine Schlupfregelung zu erstellen damit das Fahrzeug maximal Beschleunigen und in Kurven an die Belastungsgrenzen der Reibung gehen kann um nicht aus der Kurve aus zu brechen. 
